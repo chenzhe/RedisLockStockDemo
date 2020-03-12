@@ -1,0 +1,5 @@
+cn\startom\redisStock\domain\gateway\CustomerGateway.class
+cn\startom\redisStock\domain\customer\Customer.class
+cn\startom\redisStock\domain\customer\Credit.class
+cn\startom\redisStock\domain\gateway\CreditGateway.class
+cn\startom\redisStock\domain\customer\domainservice\CreditChecker.class

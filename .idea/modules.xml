@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/redisStock.iml" filepath="$PROJECT_DIR$/redisStock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisStock-app/redisStock-app.iml" filepath="$PROJECT_DIR$/redisStock-app/redisStock-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisStock-client/redisStock-client.iml" filepath="$PROJECT_DIR$/redisStock-client/redisStock-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisStock-controller/redisStock-controller.iml" filepath="$PROJECT_DIR$/redisStock-controller/redisStock-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisStock-domain/redisStock-domain.iml" filepath="$PROJECT_DIR$/redisStock-domain/redisStock-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisStock-infrastructure/redisStock-infrastructure.iml" filepath="$PROJECT_DIR$/redisStock-infrastructure/redisStock-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/start/start.iml" filepath="$PROJECT_DIR$/start/start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worker/worker.iml" filepath="$PROJECT_DIR$/worker/worker.iml" />
+    </modules>
+  </component>
+</project>

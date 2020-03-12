@@ -1,0 +1,27 @@
+
+spring:
+  kafka:
+    producer:
+      type: async
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      transaction-id-prefix: tx.
+    consumer:
+      properties:
+        isolation.level: read_committed
+      enable-auto-commit: false
+#    request:
+#      required.acks: 1
+    queue:
+      buffering:
+        max:
+          ms: 5000
+          messages: 10000
+      enqueue:
+        timeout:
+          ms: -1
+    batch:
+      num:
+        messages: 200
+    bootstrap-servers: 192.168.100.175:9092
+server:
+  port: 8081

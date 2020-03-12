@@ -1,0 +1,10 @@
+cn\startom\redisStock\dto\domainmodel\CompanyType.class
+cn\startom\redisStock\dto\domainevent\DomainEventConstant.class
+cn\startom\redisStock\dto\domainmodel\Customer.class
+cn\startom\redisStock\dto\domainmodel\ErrorCode.class
+cn\startom\redisStock\dto\CustomerListByNameQry.class
+cn\startom\redisStock\dto\domainmodel\CustomerType.class
+cn\startom\redisStock\api\CustomerServiceI.class
+cn\startom\redisStock\dto\domainevent\CustomerCreatedEvent.class
+cn\startom\redisStock\dto\CustomerAddCmd.class
+cn\startom\redisStock\dto\domainmodel\SourceType.class

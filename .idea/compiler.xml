@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redisStock-controller" />
+        <module name="redisStock-infrastructure" />
+        <module name="start" />
+        <module name="redisStock-app" />
+        <module name="worker" />
+        <module name="redisStock-domain" />
+        <module name="redisStock-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="redisStock" target="1.8" />
+      <module name="redisStock-app" target="1.8" />
+      <module name="redisStock-client" target="1.8" />
+      <module name="redisStock-controller" target="1.8" />
+      <module name="redisStock-domain" target="1.8" />
+      <module name="redisStock-infrastructure" target="1.8" />
+      <module name="start" target="1.8" />
+      <module name="worker" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

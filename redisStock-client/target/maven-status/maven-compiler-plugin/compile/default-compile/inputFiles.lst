@@ -1,0 +1,10 @@
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\CustomerListByNameQry.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainmodel\CustomerType.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainmodel\ErrorCode.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainmodel\SourceType.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\CustomerAddCmd.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainevent\CustomerCreatedEvent.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainmodel\Customer.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\api\CustomerServiceI.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainevent\DomainEventConstant.java
+D:\projects\redisStock\redisStock-client\src\main\java\cn\startom\redisStock\dto\domainmodel\CompanyType.java

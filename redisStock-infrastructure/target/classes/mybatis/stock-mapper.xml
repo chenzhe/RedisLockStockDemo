@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.startom.redisStock.repository.StockMapper">
+    <select id="getById" resultType="cn.startom.redisStock.repository.StockDO" >
+        select * from stock where product_id = #{id}
+    </select>
+    <update id="addStock" >
+        update stock set stock=stock+#{stock} where product_id=#{product_id}
+    </update>
+    <update id="subStock" >
+        update stock set stock=stock-#{stock} where product_id=#{product_id} and stock>0
+    </update>
+    <insert id="insertStockLogs">
+        insert into stock_logs(id,out_stock) values(#{id},#{out_stock})
+    </insert>
+    <update id="updateStockLogs">
+        update stock_logs set out_stock=#{out_stock} where id=#{id}
+    </update>
+</mapper>

@@ -11,13 +11,19 @@ import cn.startom.redisStock.dto.domainmodel.StockInfo;
 import com.alibaba.cola.dto.MultiResponse;
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.dto.SingleResponse;
+import com.google.common.util.concurrent.RateLimiter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.concurrent.TimeUnit;
 
 @RestController
 public class StockController {
     @Autowired
     private StockServiceI serviceI;
+
+    //每秒钟放入5个令牌，相当于每秒只允许执行5个请求
+    private static final RateLimiter RATE_LIMITER = RateLimiter.create(5);
 
     @GetMapping(value = "/stock")
     public SingleResponse<StockInfo> findById(@RequestParam int pid){
@@ -33,8 +39,13 @@ public class StockController {
     }
     @PostMapping(value="/stock/sub")
     @CacheLock(prefix = "stock-lock")
-    public Response subStock(@CacheParam(name = "cmd")@RequestBody  StockSubCmd cmd){
-        return serviceI.subStock(cmd);
+    public Response subStock(@CacheParam(name = "cmd")@RequestBody  StockSubCmd cmd)
+    {
+        if(RATE_LIMITER.tryAcquire(100, TimeUnit.MILLISECONDS)) {
+            return serviceI.subStock(cmd);
+        }else{
+            return Response.buildFailure("token_limit","to many request");
+        }
     }
 
 }
